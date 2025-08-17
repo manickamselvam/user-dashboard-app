@@ -1,0 +1,67 @@
+.user-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+  transition: background-color 0.3s;
+  padding: 16px;
+}
+
+.user-card:hover {
+  background-color: #d9d9d9;
+}
+
+.user-avatar {
+  margin-bottom: 16px;
+}
+
+.user-name {
+  margin: 0 0 8px 0;
+  font-weight: bold;
+  color: #000;
+}
+
+.user-email {
+  margin: 0;
+  color: #8c8c8c;
+  font-size: 14px;
+}
+
+.hover-actions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  gap: 8px;
+}
+
+.user-card:hover .hover-actions {
+  display: flex;
+}
+
+.action-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.edit {
+  background-color: #722ed1;
+}
+
+.delete {
+  background-color: #ff4d4f;
+}
+
+.edit .anticon,
+.delete .anticon {
+  color: #fff;
+  font-size: 18px;
+}
